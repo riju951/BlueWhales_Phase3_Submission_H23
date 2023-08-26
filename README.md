@@ -1,6 +1,6 @@
 # Hackout-23
 
-![1](https://github.com/riju951/Hackout-23/assets/82694741/f78b1d8b-d92e-4178-9037-17909fa07826)
+![image](https://github.com/riju951/Hackout-23/assets/82694741/ce7400ab-c9ad-47dd-af98-53bed508feaf)
 
 ![2](https://github.com/riju951/Hackout-23/assets/82694741/1837ca70-d921-4cb9-9076-117ac18c4470)
 
