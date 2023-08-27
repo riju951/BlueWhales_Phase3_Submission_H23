@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Map</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('Gas_Cylinder.jpg');
+            background-size: cover;
+        }
+
+        #map-container {
+            width: 80%;
+            max-width: 800px;
+            height: 400px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        #location-form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        select, button {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+        select {
+            width: 220px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="location-form">
+        <h2>Find a City on the Map</h2>
+        <label for="state-input">Select a State:</label>
+        <select id="state-input">
+            <option value="" disabled selected>Select a State</option>
+            <!-- Add your list of states here -->
+            <option value="Gujarat">Gujarat</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="city-input">Select a City:</label>
+        <select id="city-input">
+            <option value="" disabled selected>Select a City</option>
+            <option value="Gujarat">Gandhinagar</option>
+            <option value="Rajasthan">Ahmedabad</option>
+            <!-- Cities will be populated dynamically based on the selected state -->
+        </select>
+
+        <button id="submit-btn">Show Map</button>
+    </div>
+
+    <div id="map-container"></div>
+
+    <script>
+        const stateInput = document.getElementById('state-input');
+        const cityInput = document.getElementById('city-input');
+        const submitButton = document.getElementById('submit-btn');
+        const mapContainer = document.getElementById('map-container');
+        
+        const citiesByState = {
+            california: ['Los Angeles', 'San Francisco', 'San Diego'],
+            'new-york': ['New York City', 'Buffalo', 'Albany'],
+            // Add more cities for each state as needed
+        };
+
+        stateInput.addEventListener('change', () => {
+            const selectedState = stateInput.value;
+            cityInput.innerHTML = '<option value="" disabled selected>Select a City</option>';
+            
+            if (selectedState && citiesByState[selectedState]) {
+                citiesByState[selectedState].forEach(city => {
+                    const option = document.createElement('option');
+                    option.value = city.toLowerCase().replace(' ', '-');
+                    option.text = city;
+                    cityInput.appendChild(option);
+                });
+            }
+        });
+
+        submitButton.addEventListener('click', () => {
+            const selectedCity = cityInput.value;
+            if (selectedCity) {
+                const mapUrl = `https://maps.google.com/maps?q=${selectedCity}&output=embed`;
+                mapContainer.innerHTML = `<iframe width="100%" height="100%" frameborder="0" style="border:0" src="${mapUrl}" allowfullscreen></iframe>`;
+            }
+        });
+    </script>
+</body>
+</html>
