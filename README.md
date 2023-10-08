@@ -1,5 +1,109 @@
 # Hackout-23
 
+
+# OXYGUARDIAN: Giving Oxygen to Lives
+
+---
+
+### Description
+
+**Theme**: Oxygen therapy is a cornerstone of modern medical practice, aiding patients with respiratory distress and chronic conditions. The sudden surge in demand during the pandemic led to challenges in maintaining a consistent oxygen supply. OxyGuardian addresses these challenges through an automated management system, enabling healthcare facilities to optimize their oxygen cylinder inventory.
+
+---
+
+### Team: Blue Whales
+
+**Members**:
+- Rijans Bhagat
+- Sakshi Parashar
+
+**Event**: Hackout 2023 held at DAIICT.
+
+---
+
+### Purpose
+
+Revolutionize the way healthcare institutions manage their oxygen supply through technology.
+
+**Objectives**:
+
+- **Real-time Tracking**: Utilizing IoT sensors for immediate tracking of cylinder locations, usage, and available oxygen levels.
+- **Alert Mechanisms**: Automated alerts to notify healthcare personnel about depleting oxygen levels.
+- **Resource Allocation**: Analyze usage patterns and demand trends to assist healthcare administrators in optimal allocation.
+
+---
+
+### Target Audience
+
+- Hospital Administrators and Managers
+- Medical Personnel (Doctors, Nurses, Paramedics)
+- Biomedical Engineers and Technicians
+- Emergency Response Teams
+- Healthcare IT Professionals
+- Healthcare Regulators and Compliance Officers
+- Healthcare Consultants and Advisors
+- Healthcare Technology Enthusiasts
+
+---
+
+### Basic Features
+
+- **Inventory Tracking**: Gain real-time insights into the current oxygen cylinder stock.
+- **Distribution Optimization**: Determine optimal distribution strategies by tracking cylinder locations and usage patterns.
+- **Predictive Maintenance**: Schedule maintenance based on usage and notify teams when cylinders need servicing.
+- **Analytics and Reporting**: Generate detailed reports on cylinder utilization, refill frequency, and maintenance history.
+- **User Interface**: User-friendly portal for hospital staff to manage oxygen cylinder data.
+- **Alert System**: Proactive alerts via SMS, Email, or Notifications for low stock levels or critical issues.
+
+---
+
+### Technologies
+
+- Database Management System (DBMS)
+- User Interface (UI) Development: HTML, CSS, JavaScript, React.js
+- Data Analytics: Skitlearn, TensorFlow
+- Reporting: Python
+- AWS IoT for IoT Implementation
+- Twilio for Alert Mechanisms
+- Git/GitHub for Version Control
+
+---
+
+### Thought Process
+
+In the current medical landscape, oxygen therapy is pivotal. The recent pandemic highlighted the challenges in maintaining a steady oxygen supply. OxyGuardian aims to empower healthcare institutions by enhancing their oxygen cylinder inventory management efficiency.
+
+---
+
+### Working and Functionalities
+
+- **Status**: Project still in progress.
+- **Current Development**: Static website prototype showcasing potential portal design. Secondary page developed to input location and manage oxygen cylinder data.
+
+---
+
+### Real-life Cases
+
+OxyGuardian could drastically alter healthcare settings, especially those grappling with oxygen supply challenges. 
+
+**Use Cases**:
+- Hospitals treating patients with respiratory issues like COVID-19, COPD, etc.
+- Optimized inventory management.
+- Efficient oxygen allocation.
+- Minimized manual tasks.
+- Preparedness for emergencies.
+- Data-backed insights leading to improved patient care.
+
+---
+
+_Thank you for considering OxyGuardian. We're enthusiastic to bring this vision to life and make a meaningful impact in healthcare._
+
+---
+
+If you need more information or wish to contribute, feel free to reach out to Team Blue Whales! 🐳🌊🧪🌬
+
+---
+
 ![image](https://github.com/riju951/Hackout-23/assets/82694741/ce7400ab-c9ad-47dd-af98-53bed508feaf)
 
 ![2](https://github.com/riju951/Hackout-23/assets/82694741/1837ca70-d921-4cb9-9076-117ac18c4470)
